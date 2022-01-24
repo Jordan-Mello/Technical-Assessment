@@ -96,6 +96,8 @@ namespace SQI.Dx
                 {
                     if (item.sampleID == givenValuesArray[1] && item.sampleGroup == givenValuesArray[2])
                     {
+                        // Should I be printing the UniqueID instead of the first input value per sample?
+                        // i.e. givenValuesArray[0] + ExpectedIDs[1-3] vs ExpectedIDs[0-3]
                         correctSamples += string.Format("{0} | {1} | {2} | {3} \n", givenValuesArray[0], item.Protocol, givenValuesArray[1], givenValuesArray[2]);
                         break;
                     }
